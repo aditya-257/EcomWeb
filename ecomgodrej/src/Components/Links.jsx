@@ -6,24 +6,20 @@ export const Links=[
         url: '/',
         text: 'home',
       },
+     
       {
         id: 2,
-        url: '/about',
-        text: 'About',
+        url: '/airforce',
+        text: 'Air Force',
       },
       {
         id: 3,
-        url: '/men',
-        text: 'Men',
+        url: '/jordans',
+        text: 'Jordans',
       },
       {
         id: 4,
-        url: '/women',
-        text: 'Women',
-      },
-      {
-        id: 5,
-        url: '/kids',
-        text: 'Kids',
+        url: '/crater',
+        text: 'Crater',
       },
 ]

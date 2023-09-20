@@ -15,14 +15,14 @@ export const Footer = () => {
         <div className={`${styles.ContactInfo}`}>
           <div className={`${styles.Contact}`}>
             <h4 className={`${styles.Head}`}>Contact</h4>
-            <p>
+            <p className={`${styles.add}`}>
               <strong>Address: </strong>562 Wellington Road,street 32,San
               Fransisco
             </p>
-            <p>
+            <p className={`${styles.ph}`}>
               <strong>Phone:</strong>+01 2222 365 /(+91) 01 2345 6789
             </p>
-            <p>
+            <p className={`${styles.time}`}>
               <strong>Hours:</strong>10:00 - 18:00, Mon - Sat
             </p>
           </div>

@@ -1,26 +1,28 @@
 import React from "react";
 import styles from "../Components/FeaturedProducts.module.css";
-// import { FeaturedItems } from './HomePageArray';
+import { BsCurrencyRupee } from "react-icons/bs";
+import { FeaturedItems } from './HomePageArray';
 import { Link } from "react-router-dom";
 import { useCart } from "../Contexts/Cart-Context";
 import { MainFilter } from "./MainFilter";
 import { useMainFilter } from "../Contexts/MainFilterContext";
 
+
 export const FeaturedProducts = () => {
   const { addItem } = useCart();
-  let { tempcart, originalcart } = useMainFilter();
-  if (tempcart.length === 0) {
-    tempcart = originalcart.filter((item) => item.id <= 15);
+  let {tempcart,originalcart} = useMainFilter();
+  if(tempcart.length=== 0){
+    tempcart=originalcart.filter((item)=>item.id<=10);
   }
+
   return (
     <>
-      <div className={`${styles.container}`}>
-        <div className={`${styles.Filter}`}>
-          <MainFilter />
-        </div>
 
+      <div className={`${styles.MainContainer}`}>
         <div className={`${styles.bg}`}>
-          <h1 className={`${styles.FeatHead}`}>Featured Products</h1>
+          <div className={`${styles.head}`}>
+            <h1 className={`${styles.FeatHead}`}>Featured Products</h1>
+          </div>
           <div className={`${styles.FeatProducts}`}>
             {tempcart.map((item) => {
               const { id, Company, Itemname, url, price, cart } = item;
@@ -34,35 +36,36 @@ export const FeaturedProducts = () => {
                     />
                   </Link>
                   <div className={`${styles.profiledetails}`}>
-                    <h3 className={`${styles.Company}`}>
-                      {Company}
-                    </h3>
-                      <div>
-                        {" "}
-                        <Link to={`/singleitem/${id}`}>
-                          <button className={`${styles.viewit}`}>
-                            View Details
-                          </button>
-                        </Link>
-                      </div>
-                  </div>
+                    <div>
+                      <h3 className={`${styles.Company}`}>
+                        {Company}
+                      </h3>
+                    </div>
 
-                  <h4 className={`${styles.Item}`}>{Itemname}</h4>
-                  <p className={`${styles.PriceCart}`}>
-                    <span className={`${styles.price}`}>Rs.{price} </span>
-                    <span
+                    <div
                       className={`${styles.cart}`}
                       onClick={() => addItem(item)}
                     >
                       {cart}
-                    </span>
+
+                    </div>
+                  </div>
+
+                  <h4 className={`${styles.Item}`}>{Itemname}</h4>
+                  <p className={`${styles.PriceCart}`}>
+                    <span className={`${styles.price}`}>RS.{price} </span>
+
                   </p>
                 </article>
               );
             })}
           </div>
         </div>
+        <div className={`${styles.sort}`}>
+         <MainFilter/>
+        </div>
       </div>
+
     </>
   );
 };

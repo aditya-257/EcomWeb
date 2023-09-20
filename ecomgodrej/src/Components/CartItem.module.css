@@ -1,7 +1,7 @@
 .Product {
-  border: 1px solid black;
+  /* border: 3px solid black; */
   padding: 0.5rem;
-  border-radius: 1.25rem;
+  /* border-radius: 1.25rem; */
 
   display: flex;
   flex-wrap: wrap;
@@ -26,7 +26,7 @@
   justify-content: space-between;
   font-size: 1.25rem;
   font-weight: 700;
-  color: rgb(29, 78, 89);
+  color: rgb(156, 156, 156);
 }
 .cart {
   background-color: rgb(204, 193, 187);
@@ -54,11 +54,12 @@
   padding: 0.15rem;
   border: none;
   background: transparent;
-  border-radius: 15rem;
-  border: 2px solid rgb(22, 217, 243);
+  border-radius: 5rem;
+  border: 1px solid rgb(0, 0, 0);
 }
 .RemoveBtn {
+  border: 1px;
   padding: 0.4rem;
-  border-radius: 20rem;
+  border-radius: 5rem;
   width: 10rem;
 }

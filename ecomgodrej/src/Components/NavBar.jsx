@@ -25,7 +25,7 @@ export const NavBar = () => {
         <div className={`${styles.NavContainer}`}>
           <div className={`${styles.NavLogo}`}>
             <img
-              src="images/NavBar/LogoImg.webp"
+              src="images/HeroImgs/logo.jpg"
               alt="Logo"
               className={`${styles.Logo}`}
             />
@@ -82,6 +82,7 @@ export const NavBar = () => {
             </div>
           </div>
         </div>
+        <hr></hr>
       </nav>
     </>
   );

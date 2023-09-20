@@ -29,35 +29,13 @@ p {
 
 
 .Hero {
-  background-image: url(../../public/images/HeroImgs/HerImg.jpg);
+  background-image: url(../../public/images/HeroImgs/maintemplate.png);
   height: 37.5rem;
   background-size: cover;
   position: relative;
-  background-attachment: fixed;
   background-repeat: no-repeat; 
   padding: 7.5rem 8.5rem;
+   
   
 }
-.HeroContent{
-    position: absolute;
-    top: 5rem;
-    left: 1.5rem;
-    
-}
-.btn{
-    font-size: 1.25rem;
-    font-weight: 500;
-    color: white;
-    cursor: pointer;
-    outline: none;
-    border: none;
-    padding: 0.5rem 0.75rem;
-    border-radius: 1.25rem;
-    background-color: grey;
-    transition: 0.2s ease;
-    margin-top: 1rem;
-}
-.btn:hover{
-   transform: scale(1.1);
-}
-
+ 

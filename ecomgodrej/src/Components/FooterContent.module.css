@@ -1,5 +1,16 @@
+*{
+    color: white;
+}
+
+p,h1,h2,h3,h4{
+    color: white;
+}
+h3{
+    color: white;
+}
+
 .Footer{
-    background-color:rgb(200, 193, 193);
+    background-color:rgb(0, 0, 0);
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
@@ -10,7 +21,7 @@
 }
 a{
     text-decoration: none;
-    color: black;
+    color: rgb(255, 255, 255);
 }
 .Links{
     display: flex;
@@ -39,3 +50,17 @@ a{
 .fonticon:hover{
     color: rgb(19, 19, 176);
 }
+.add{
+    color: white;
+}
+.ph{
+    color: white;
+}
+.time{
+    color: white;
+}
+
+h3{
+    color: white;
+}
+

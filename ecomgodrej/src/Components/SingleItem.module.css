@@ -1,7 +1,11 @@
+
 .home{
     text-align: right;
     margin-right: 1.5rem;
     padding: 1rem;
+}
+h2,h4,p,span{
+    color: black;
 }
 
 .itemContainer{
@@ -16,6 +20,7 @@
     flex-direction: column;
     gap: 2rem;
     margin-right: 5rem;
+    color: black;
 }
 .img{
     width: 25rem;
@@ -42,6 +47,7 @@
     border-bottom: 2px solid red;
     width: 10rem;
     text-align: center;
+    color: black;
 }
 @media screen and (max-width: 920px) {
     .itemContainer{
